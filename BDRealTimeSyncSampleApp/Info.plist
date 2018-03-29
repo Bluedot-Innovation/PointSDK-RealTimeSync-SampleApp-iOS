@@ -18,10 +18,16 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Access your location in the background</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Access your location all the time</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Access your location when in use</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Access your motion sensor to improve user experience</string>
 	<key>UIBackgroundModes</key>

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BDPointService.h"
-#import "BDPointSDK.h"
+@import BDPointSDK;
 #import "BDFirebaseConstants.h"
 
 static NSString *kBDPointAPIKey         = @"Your-Bluedot-App-API-Key";

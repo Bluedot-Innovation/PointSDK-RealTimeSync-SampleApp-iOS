@@ -6,7 +6,7 @@ target 'BDRealTimeSyncSampleApp' do
   # use_frameworks!
 
   # Pods for BDRealTimeSyncSampleApp
-  pod 'PointSDK-Cocoapods-iOS'
+  pod 'BluedotPointSDK'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
 end

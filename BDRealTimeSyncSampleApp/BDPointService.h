@@ -6,7 +6,7 @@
 //  Copyright © 2016 Bluedot Innovation. All rights reserved.
 //
 
-#import "BDPointSDK.h"
+@import BDPointSDK;
 
 @interface BDPointService : NSObject<BDPointDelegate>
 
