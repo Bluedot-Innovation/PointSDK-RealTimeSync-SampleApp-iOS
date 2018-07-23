@@ -11,9 +11,9 @@
 @import BDPointSDK;
 #import "BDFirebaseConstants.h"
 
-static NSString *kBDPointAPIKey         = @"Your-Bluedot-App-API-Key";
-static NSString *kBDPointPackageName    = @"Your-Bluedot-App-Package-Name";
-static NSString *kBDPointUsername       = @"Your-Bluedot-App-Username";
+static NSString *kBDPointAPIKey         = @"0eb0edd0-621d-11e8-bdfa-02e0c7adda66";
+static NSString *kBDPointPackageName    = @"io.bluedot.test.pavel";
+static NSString *kBDPointUsername       = @"pavel@bluedot.io";
 
 static NSString *topicPrefix = @"/topics/";
 
@@ -49,9 +49,7 @@ static NSString *topicPrefix = @"/topics/";
 - (void)start
 {
     BDLocationManager.instance.pointDelegate = self;
-    [BDLocationManager.instance authenticateWithApiKey:kBDPointAPIKey
-                                           packageName:kBDPointPackageName
-                                              username:kBDPointUsername];
+    [BDLocationManager.instance authenticateWithApiKey:kBDPointAPIKey];
 }
 
 - (NSString *)topicToSubscribe
@@ -98,9 +96,7 @@ static NSString *topicPrefix = @"/topics/";
                                                       userInfo: nil];
 }
 
-- (void)willAuthenticateWithUsername: (NSString *)username
-                              apiKey: (NSString *)apiKey
-                         packageName: (NSString *)packageName
+- (void)willAuthenticateWithApiKey: (NSString *)apiKey
 {
 }
 

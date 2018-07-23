@@ -13,7 +13,7 @@
 #import "BDFirebaseConstants.h"
 @import Firebase;
 @import FirebaseInstanceID;
-@import FirebaseMessaging;
+#import <FirebaseMessaging/FirebaseMessaging.h>
 @import UserNotifications;
 
 // Implement FIRMessagingDelegate to receive data message via FCM
