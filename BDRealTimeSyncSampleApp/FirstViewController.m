@@ -8,7 +8,6 @@
 
 #import "FirstViewController.h"
 #import "BDFirebaseConstants.h"
-#import "BDPointService.h"
 
 @interface FirstViewController ()
 
@@ -22,8 +21,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [ [ NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(didReceiveConsoleLogNotification:) name:kBDConsoleLogNotification object:nil ];
-    
-    [ BDPointService.instance start ];
 }
 
 - (void)dealloc
