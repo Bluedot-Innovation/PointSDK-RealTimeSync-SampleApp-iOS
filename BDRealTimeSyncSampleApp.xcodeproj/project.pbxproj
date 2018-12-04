@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B048C36B398AAC06D4CC9F6 /* libPods-BDRealTimeSyncSampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD65D2ED0727091925A2C9F1 /* libPods-BDRealTimeSyncSampleApp.a */; };
 		9A76486B1DA4C3F800472DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486A1DA4C3F800472DB7 /* main.m */; };
 		9A76486E1DA4C3F800472DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486D1DA4C3F800472DB7 /* AppDelegate.m */; };
 		9A7648711DA4C3F800472DB7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7648701DA4C3F800472DB7 /* FirstViewController.m */; };
@@ -15,8 +14,8 @@
 		9A7648771DA4C3F800472DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7648751DA4C3F800472DB7 /* Main.storyboard */; };
 		9A7648791DA4C3F800472DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7648781DA4C3F800472DB7 /* Assets.xcassets */; };
 		9A76487C1DA4C3F800472DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A76487A1DA4C3F800472DB7 /* LaunchScreen.storyboard */; };
-		9A7648861DA4C48300472DB7 /* BDPointService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7648851DA4C48300472DB7 /* BDPointService.m */; };
 		E1B8CEE120CF5CD600F29A4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */; };
+		FAE4E80D4D00EA0F3015FE07 /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		107BB9E8D22CD66214F8EC1F /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDRealTimeSyncSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		9A7648661DA4C3F800472DB7 /* BDRealTimeSyncSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDRealTimeSyncSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76486A1DA4C3F800472DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A76486C1DA4C3F800472DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,13 +47,9 @@
 		9A7648781DA4C3F800472DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A76487B1DA4C3F800472DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A76487D1DA4C3F800472DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A7648831DA4C48300472DB7 /* BDFirebaseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDFirebaseConstants.h; sourceTree = "<group>"; };
-		9A7648841DA4C48300472DB7 /* BDPointService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDPointService.h; sourceTree = "<group>"; };
-		9A7648851DA4C48300472DB7 /* BDPointService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDPointService.m; sourceTree = "<group>"; };
 		9A7648871DA4C6C000472DB7 /* BDRealTimeSyncSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BDRealTimeSyncSampleApp.entitlements; sourceTree = "<group>"; };
-		BD65D2ED0727091925A2C9F1 /* libPods-BDRealTimeSyncSampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BDRealTimeSyncSampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F1E64111DF1AF7A6B62049D3 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E093DC21AE4CCD007D1B42 /* BDFirebaseConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFirebaseConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,20 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B048C36B398AAC06D4CC9F6 /* libPods-BDRealTimeSyncSampleApp.a in Frameworks */,
+				FAE4E80D4D00EA0F3015FE07 /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201FC5D1E1D77164969FE95C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */,
+				636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9A76485D1DA4C3F800472DB7 = {
 			isa = PBXGroup;
 			children = (
 				9A7648681DA4C3F800472DB7 /* BDRealTimeSyncSampleApp */,
 				9A7648671DA4C3F800472DB7 /* Products */,
-				FA1A9D4D94594CE3FB2B7827 /* Pods */,
-				EFBA100BB9B214DDF7C259A1 /* Frameworks */,
+				201FC5D1E1D77164969FE95C /* Pods */,
+				A0A53036B1197503AD3E9D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,15 +101,13 @@
 				9A7648701DA4C3F800472DB7 /* FirstViewController.m */,
 				9A7648721DA4C3F800472DB7 /* SecondViewController.h */,
 				9A7648731DA4C3F800472DB7 /* SecondViewController.m */,
-				9A7648831DA4C48300472DB7 /* BDFirebaseConstants.h */,
-				9A7648841DA4C48300472DB7 /* BDPointService.h */,
-				9A7648851DA4C48300472DB7 /* BDPointService.m */,
 				9A7648751DA4C3F800472DB7 /* Main.storyboard */,
 				9A7648781DA4C3F800472DB7 /* Assets.xcassets */,
 				9A76487A1DA4C3F800472DB7 /* LaunchScreen.storyboard */,
 				9A76487D1DA4C3F800472DB7 /* Info.plist */,
 				9A7648691DA4C3F800472DB7 /* Supporting Files */,
 				E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */,
+				E1E093DC21AE4CCD007D1B42 /* BDFirebaseConstants.h */,
 			);
 			path = BDRealTimeSyncSampleApp;
 			sourceTree = "<group>";
@@ -116,21 +120,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EFBA100BB9B214DDF7C259A1 /* Frameworks */ = {
+		A0A53036B1197503AD3E9D3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD65D2ED0727091925A2C9F1 /* libPods-BDRealTimeSyncSampleApp.a */,
+				4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA1A9D4D94594CE3FB2B7827 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F1E64111DF1AF7A6B62049D3 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */,
-				107BB9E8D22CD66214F8EC1F /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,13 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A7648801DA4C3F800472DB7 /* Build configuration list for PBXNativeTarget "BDRealTimeSyncSampleApp" */;
 			buildPhases = (
-				E6569A3E2F35022F2695BB8D /* [CP] Check Pods Manifest.lock */,
+				9E0874F83CA6A738FB340512 /* [CP] Check Pods Manifest.lock */,
 				9A7648621DA4C3F800472DB7 /* Sources */,
 				9A7648631DA4C3F800472DB7 /* Frameworks */,
 				9A7648641DA4C3F800472DB7 /* Resources */,
 				782CBEDF2048B04E00B30238 /* Embed Frameworks */,
 				78FD6D80206C8FE50031A0DF /* Strip Symbols */,
-				9BFDF7F83AE9D1F4299329BC /* [CP] Embed Pods Frameworks */,
+				AD8E3684F359589E2C97FBB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,7 +158,7 @@
 		9A76485E1DA4C3F800472DB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Bluedot Innovation";
 				TargetAttributes = {
 					9A7648651DA4C3F800472DB7 = {
@@ -179,7 +174,7 @@
 				};
 			};
 			buildConfigurationList = 9A7648611DA4C3F800472DB7 /* Build configuration list for PBXProject "BDRealTimeSyncSampleApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -225,40 +220,54 @@
 			shellPath = /bin/sh;
 			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
 		};
-		9BFDF7F83AE9D1F4299329BC /* [CP] Embed Pods Frameworks */ = {
+		9E0874F83CA6A738FB340512 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh",
-				"${PODS_ROOT}/BluedotPointSDK/PointSDK/BDPointSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDPointSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6569A3E2F35022F2695BB8D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BDRealTimeSyncSampleApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD8E3684F359589E2C97FBB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh",
+				"${PODS_ROOT}/BluedotPointSDK/PointSDK/BDPointSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDPointSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -270,7 +279,6 @@
 			files = (
 				9A7648741DA4C3F800472DB7 /* SecondViewController.m in Sources */,
 				9A76486E1DA4C3F800472DB7 /* AppDelegate.m in Sources */,
-				9A7648861DA4C48300472DB7 /* BDPointService.m in Sources */,
 				9A7648711DA4C3F800472DB7 /* FirstViewController.m in Sources */,
 				9A76486B1DA4C3F800472DB7 /* main.m in Sources */,
 			);
@@ -307,15 +315,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -356,15 +373,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -392,7 +418,7 @@
 		};
 		9A7648811DA4C3F800472DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1E64111DF1AF7A6B62049D3 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -404,18 +430,21 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BDRealTimeSyncSampleApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluedotinnovation.BDFirebaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "461ecdf6-a08c-4468-9b29-0447dbba4541";
-				PROVISIONING_PROFILE_SPECIFIER = "Firebase Test";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.bluedotinnovation.BDFirebaseTest";
 			};
 			name = Debug;
 		};
 		9A7648821DA4C3F800472DB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 107BB9E8D22CD66214F8EC1F /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */;
+			baseConfigurationReference = 636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -427,12 +456,15 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BDRealTimeSyncSampleApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluedotinnovation.BDFirebaseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "801724a8-8767-4b62-87f0-913746d3d707";
-				PROVISIONING_PROFILE_SPECIFIER = "Prod FirebaseTest";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.bluedotinnovation.BDFirebaseTest";
 			};
 			name = Release;
 		};
