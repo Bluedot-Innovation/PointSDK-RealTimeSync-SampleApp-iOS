@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3685BBBDB5401AB740C67CFF /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F60AF231E867BAC5381E6D6 /* Pods_BDRealTimeSyncSampleApp.framework */; };
 		9A76486B1DA4C3F800472DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486A1DA4C3F800472DB7 /* main.m */; };
 		9A76486E1DA4C3F800472DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486D1DA4C3F800472DB7 /* AppDelegate.m */; };
 		9A7648711DA4C3F800472DB7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7648701DA4C3F800472DB7 /* FirstViewController.m */; };
@@ -15,7 +16,6 @@
 		9A7648791DA4C3F800472DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7648781DA4C3F800472DB7 /* Assets.xcassets */; };
 		9A76487C1DA4C3F800472DB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A76487A1DA4C3F800472DB7 /* LaunchScreen.storyboard */; };
 		E1B8CEE120CF5CD600F29A4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */; };
-		FAE4E80D4D00EA0F3015FE07 /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,9 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDRealTimeSyncSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		6A6A3CF3C9015E447FBC11C0 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F60AF231E867BAC5381E6D6 /* Pods_BDRealTimeSyncSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDRealTimeSyncSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		872884CC6669EDE3C22582B3 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		9A7648661DA4C3F800472DB7 /* BDRealTimeSyncSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDRealTimeSyncSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A76486A1DA4C3F800472DB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A76486C1DA4C3F800472DB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,18 +57,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE4E80D4D00EA0F3015FE07 /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */,
+				3685BBBDB5401AB740C67CFF /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		201FC5D1E1D77164969FE95C /* Pods */ = {
+		28EA09E5F99A5DFF69EDADFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */,
-				636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */,
+				7F60AF231E867BAC5381E6D6 /* Pods_BDRealTimeSyncSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA5C2D686222E0DC92D21F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A6A3CF3C9015E447FBC11C0 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */,
+				872884CC6669EDE3C22582B3 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -78,8 +86,8 @@
 			children = (
 				9A7648681DA4C3F800472DB7 /* BDRealTimeSyncSampleApp */,
 				9A7648671DA4C3F800472DB7 /* Products */,
-				201FC5D1E1D77164969FE95C /* Pods */,
-				A0A53036B1197503AD3E9D3D /* Frameworks */,
+				7FA5C2D686222E0DC92D21F8 /* Pods */,
+				28EA09E5F99A5DFF69EDADFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,14 +128,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A0A53036B1197503AD3E9D3D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4AEFDE3DB0EC055B9AFF6206 /* Pods_BDRealTimeSyncSampleApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,13 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A7648801DA4C3F800472DB7 /* Build configuration list for PBXNativeTarget "BDRealTimeSyncSampleApp" */;
 			buildPhases = (
-				9E0874F83CA6A738FB340512 /* [CP] Check Pods Manifest.lock */,
+				A20718E426E6AF0430913F07 /* [CP] Check Pods Manifest.lock */,
 				9A7648621DA4C3F800472DB7 /* Sources */,
 				9A7648631DA4C3F800472DB7 /* Frameworks */,
 				9A7648641DA4C3F800472DB7 /* Resources */,
 				782CBEDF2048B04E00B30238 /* Embed Frameworks */,
 				78FD6D80206C8FE50031A0DF /* Strip Symbols */,
-				AD8E3684F359589E2C97FBB3 /* [CP] Embed Pods Frameworks */,
+				372A06DB405815DF05D63AFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,43 +206,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		78FD6D80206C8FE50031A0DF /* Strip Symbols */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Strip Symbols";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
-		};
-		9E0874F83CA6A738FB340512 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BDRealTimeSyncSampleApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD8E3684F359589E2C97FBB3 /* [CP] Embed Pods Frameworks */ = {
+		372A06DB405815DF05D63AFA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +232,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78FD6D80206C8FE50031A0DF /* Strip Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Symbols";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+		A20718E426E6AF0430913F07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BDRealTimeSyncSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -418,7 +418,7 @@
 		};
 		9A7648811DA4C3F800472DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A16BBBC449E8ECFC594915 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 6A6A3CF3C9015E447FBC11C0 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,7 +444,7 @@
 		};
 		9A7648821DA4C3F800472DB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 636E640A8AFA497E640A04E8 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */;
+			baseConfigurationReference = 872884CC6669EDE3C22582B3 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
