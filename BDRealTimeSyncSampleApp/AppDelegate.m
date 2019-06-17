@@ -49,7 +49,7 @@ static NSString *kBDPointAPIKey = @"";
     BDLocationManager.instance.locationDelegate = self;
     BDLocationManager.instance.sessionDelegate = self;
     
-    [BDLocationManager.instance authenticateWithApiKey:kBDPointAPIKey];
+    [BDLocationManager.instance authenticateWithApiKey:kBDPointAPIKey requestAuthorization:authorizedAlways];
     
     return YES;
 }
