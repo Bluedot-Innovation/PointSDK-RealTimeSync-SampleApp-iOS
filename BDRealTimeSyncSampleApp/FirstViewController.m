@@ -7,7 +7,8 @@
 //
 
 #import "FirstViewController.h"
-#import "BDFirebaseConstants.h"
+#import "Constants.h"
+@import BDPointSDK;
 
 @interface FirstViewController ()
 
@@ -19,8 +20,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [ [ NSNotificationCenter defaultCenter ] addObserver:self selector:@selector(didReceiveConsoleLogNotification:) name:kBDConsoleLogNotification object:nil ];
+    
+    [BDLocationManager.instance initializeWithProjectId: ProjectId completion:^(NSError * _Nullable error) {
+        if(error != nil){
+            NSString *message = [NSString stringWithFormat: @"Bluedot Point SDK initialization failed: %@\n", error.localizedDescription];
+            [[NSNotificationCenter defaultCenter] postNotificationName: kBDConsoleLogNotification
+                              object: nil
+                            userInfo: @{@"log": message}];
+            return;
+        }
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName: kBDConsoleLogNotification
+                          object: nil
+                        userInfo: @{@"log": @"Bluedot SDK Initialised\n"}];
+        
+        [BDLocationManager.instance startGeoTriggeringWithCompletion:^(NSError * _Nullable error) {
+            if(error != nil){
+                NSString *message = [NSString stringWithFormat: @"Start GeoTriggering failed: %@\n", error.localizedDescription];
+                [[NSNotificationCenter defaultCenter] postNotificationName: kBDConsoleLogNotification
+                                  object: nil
+                                userInfo: @{@"log": message}];
+                return;
+            }
+
+            [[NSNotificationCenter defaultCenter] postNotificationName: kBDConsoleLogNotification
+                              object: nil
+                            userInfo: @{@"log": @"Geotriggering Running\n"}];
+        }];
+    }];
+    
 }
 
 - (void)dealloc
