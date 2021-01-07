@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3685BBBDB5401AB740C67CFF /* Pods_BDRealTimeSyncSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F60AF231E867BAC5381E6D6 /* Pods_BDRealTimeSyncSampleApp.framework */; };
+		78D52FEC258B0B070098FB0A /* OnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D52FEB258B0B070098FB0A /* OnboardingViewController.m */; };
 		9A76486B1DA4C3F800472DB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486A1DA4C3F800472DB7 /* main.m */; };
 		9A76486E1DA4C3F800472DB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A76486D1DA4C3F800472DB7 /* AppDelegate.m */; };
 		9A7648711DA4C3F800472DB7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7648701DA4C3F800472DB7 /* FirstViewController.m */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		6A6A3CF3C9015E447FBC11C0 /* Pods-BDRealTimeSyncSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		78D52FEA258B0AF00098FB0A /* OnboardingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingViewController.h; sourceTree = "<group>"; };
+		78D52FEB258B0B070098FB0A /* OnboardingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnboardingViewController.m; sourceTree = "<group>"; };
 		7F60AF231E867BAC5381E6D6 /* Pods_BDRealTimeSyncSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BDRealTimeSyncSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		872884CC6669EDE3C22582B3 /* Pods-BDRealTimeSyncSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BDRealTimeSyncSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		9A7648661DA4C3F800472DB7 /* BDRealTimeSyncSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDRealTimeSyncSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +52,7 @@
 		9A76487D1DA4C3F800472DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7648871DA4C6C000472DB7 /* BDRealTimeSyncSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BDRealTimeSyncSampleApp.entitlements; sourceTree = "<group>"; };
 		E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E1E093DC21AE4CCD007D1B42 /* BDFirebaseConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFirebaseConstants.h; sourceTree = "<group>"; };
+		E1E093DC21AE4CCD007D1B42 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +112,15 @@
 				9A7648701DA4C3F800472DB7 /* FirstViewController.m */,
 				9A7648721DA4C3F800472DB7 /* SecondViewController.h */,
 				9A7648731DA4C3F800472DB7 /* SecondViewController.m */,
+				78D52FEA258B0AF00098FB0A /* OnboardingViewController.h */,
+				78D52FEB258B0B070098FB0A /* OnboardingViewController.m */,
 				9A7648751DA4C3F800472DB7 /* Main.storyboard */,
 				9A7648781DA4C3F800472DB7 /* Assets.xcassets */,
 				9A76487A1DA4C3F800472DB7 /* LaunchScreen.storyboard */,
 				9A76487D1DA4C3F800472DB7 /* Info.plist */,
 				9A7648691DA4C3F800472DB7 /* Supporting Files */,
 				E1B8CEE020CF5CD600F29A4E /* GoogleService-Info.plist */,
-				E1E093DC21AE4CCD007D1B42 /* BDFirebaseConstants.h */,
+				E1E093DC21AE4CCD007D1B42 /* Constants.h */,
 			);
 			path = BDRealTimeSyncSampleApp;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -211,27 +217,37 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh",
 				"${PODS_ROOT}/BluedotPointSDK/PointSDK/BDPointSDK.framework",
+				"${PODS_ROOT}/BluedotPointSDK/PointSDK/BDPointSDK.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDPointSDK.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/BDPointSDK.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstanceID.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BDRealTimeSyncSampleApp/Pods-BDRealTimeSyncSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78FD6D80206C8FE50031A0DF /* Strip Symbols */ = {
@@ -246,22 +262,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name 'BDPointSDK.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 		A20718E426E6AF0430913F07 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BDRealTimeSyncSampleApp-checkManifestLockResult.txt",
 			);
@@ -280,6 +292,7 @@
 				9A7648741DA4C3F800472DB7 /* SecondViewController.m in Sources */,
 				9A76486E1DA4C3F800472DB7 /* AppDelegate.m in Sources */,
 				9A7648711DA4C3F800472DB7 /* FirstViewController.m in Sources */,
+				78D52FEC258B0B070098FB0A /* OnboardingViewController.m in Sources */,
 				9A76486B1DA4C3F800472DB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  BDFirebaseUtilities.h
+//  Constants.h
 //  BDRealTimeSyncSampleApp
 //
 //  Created by Jason Xie on 3/10/16.
@@ -10,11 +10,4 @@ static NSString *kBDConsoleLogNotification = @"kBDConsoleLogNotificationKey";
 
 static NSString *kBDZoneInfoUpdateNotification = @"kBDZoneInfoUpdateNotificationKey";
 
-static NSString* now()
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle:NSDateFormatterLongStyle];
-    [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
-    
-    return [dateFormatter stringFromDate:[NSDate date]];
-}
+static NSString *ProjectId = @"EnterYourProjectId";
